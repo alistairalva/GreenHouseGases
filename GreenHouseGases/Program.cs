@@ -1,7 +1,5 @@
 ﻿using System;
 using System.Linq;
-using System.Reflection.PortableExecutable;
-using System.Runtime.CompilerServices;
 using System.Xml;           // XmlDocument (DOM) class
 using System.Xml.XPath; // XPathNavigator class
 
@@ -82,6 +80,8 @@ namespace GreenHouse
                 Console.ReadKey();
                 Console.WriteLine("\n\n");
             } while (choice == 'Y' || choice == 'R' || choice == 'S');
+
+            Console.WriteLine("END OF PROGRAM!");
         }
 
         private static void AdjustYears()
@@ -278,5 +278,6 @@ namespace GreenHouse
                 Console.WriteLine($"ERROR: {err.Message}");
             }
         }
+
     }
 }
